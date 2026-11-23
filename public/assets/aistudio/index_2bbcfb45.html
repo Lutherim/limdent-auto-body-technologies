@@ -1,0 +1,1182 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>LimDent Auto Body Technologies | SAMBRA Approved Panelbeaters in Polokwane</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"></script>
+  <style>
+    :root {
+      --navy: #1E3A70;
+      --navy-dark: #0D1B35;
+      --red: #C81E2B;
+      --red-bright: #E11D2E;
+      --surface: #F4F6FA;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      color: #0F172A;
+      background-color: #FFFFFF;
+      overflow-x: hidden;
+    }
+
+    /* Branded Page Preloader */
+    #page-loader {
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      background: #FFFFFF;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: opacity 0.55s ease, visibility 0.55s ease;
+    }
+    #page-loader.loader-hidden {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+    .loader-bar-track {
+      width: 240px;
+      height: 5px;
+      background: #E2E8F0;
+      border-radius: 9999px;
+      overflow: hidden;
+      margin-top: 20px;
+    }
+    .loader-bar-fill {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, var(--navy) 0%, var(--red-bright) 100%);
+      border-radius: 9999px;
+      transition: width 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    /* Racing stripe accent matching LimDent logo */
+    .racing-stripe {
+      height: 6px;
+      background: linear-gradient(90deg, var(--red) 0%, var(--red) 50%, var(--navy) 50%, var(--navy) 100%);
+    }
+
+    /* Before / After Interactive Slider */
+    .ba-container {
+      position: relative;
+      overflow: hidden;
+      user-select: none;
+      touch-action: pan-y;
+    }
+    .ba-after-wrapper {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+    }
+    .ba-divider {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 3px;
+      background: #FFFFFF;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.45);
+      pointer-events: none;
+      z-index: 20;
+    }
+    .ba-handle {
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 44px;
+      height: 44px;
+      border-radius: 9999px;
+      background: var(--red);
+      border: 3px solid #FFFFFF;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #FFFFFF;
+      pointer-events: none;
+      z-index: 21;
+    }
+    .ba-range {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      cursor: ew-resize;
+      z-index: 30;
+      margin: 0;
+    }
+
+    /* Floating WhatsApp Pulse */
+    @keyframes wa-pulse {
+      0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.55); }
+      70% { box-shadow: 0 0 0 14px rgba(37, 211, 102, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+    }
+    .wa-fab {
+      animation: wa-pulse 2.2s infinite;
+    }
+
+    /* Modern preview refinement: preserve LimDent navy/red identity with calmer spacing */
+    :root { --navy: #1E3A70; --navy-dark: #0D1B35; --red: #C81E2B; --red-bright: #E11D2E; --surface: #F4F6FA; }
+    body { font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; letter-spacing: -0.01em; }
+    header { box-shadow: 0 8px 24px rgba(13,27,53,.05) !important; }
+    header nav a { letter-spacing: .01em; }
+    #top { background: radial-gradient(circle at 82% 18%, rgba(200,30,43,.18), transparent 30%), linear-gradient(135deg,#0D1B35 0%,#15294f 54%,#1E3A70 100%) !important; }
+    #top h1 { letter-spacing: -.045em; }
+    #top .max-w-7xl { position: relative; }
+    #top .rounded-2xl { border-radius: 1.5rem !important; }
+    #services { background: #F5F7FB !important; }
+    #services .grid > div { border-radius: 1.35rem !important; box-shadow: 0 10px 30px rgba(15,23,42,.045) !important; transition: transform .22s ease, box-shadow .22s ease; }
+    #services .grid > div:hover { transform: translateY(-4px); box-shadow: 0 18px 40px rgba(15,23,42,.09) !important; }
+    #services h2, #services h3 { letter-spacing: -.025em; }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; } }
+  </style>
+</head>
+<body class="antialiased">
+
+  <!-- BRANDED PRELOADER -->
+  <div id="page-loader" role="status" aria-label="Loading LimDent Auto Body Technologies">
+    <div class="flex flex-col items-center px-6 text-center">
+      <img
+        src="images/logo.png"
+        alt="LimDent Auto Body Technologies Logo"
+        class="w-64 sm:w-80 max-w-full h-auto object-contain"
+      />
+      <p class="mt-3 text-xs sm:text-sm font-semibold tracking-widest uppercase text-[#1E3A70]">
+        SAMBRA Approved &bull; Polokwane
+      </p>
+      <div class="loader-bar-track">
+        <div id="loader-bar-fill" class="loader-bar-fill"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- UNOFFICIAL PREVIEW BANNER (Easy to remove on launch) -->
+  <div class="bg-[#0D1B35] text-slate-200 text-xs py-2 px-4 border-b border-white/10">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-2">
+        <span class="inline-block w-2 h-2 rounded-full bg-[#E11D2E]"></span>
+        <span><strong>Concept Preview</strong> &bull; Custom-built for LimDent Auto Body Technologies (Polokwane)</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <button id="replay-loader-btn" type="button" class="underline hover:text-white transition cursor-pointer">
+          Replay Loader
+        </button>
+        <a href="tel:+27152926518" class="font-semibold text-white hover:text-[#fca5a5] transition">
+          015 292 6518
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- STICKY NAVIGATION -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-slate-200 shadow-sm">
+    <div class="racing-stripe"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 sm:h-20">
+        <!-- Brand Logo -->
+        <a href="#top" class="flex items-center gap-3 shrink-0">
+          <img
+            src="images/logo.png"
+            alt="LimDent Auto Body Technologies"
+            class="h-11 sm:h-14 w-auto object-contain"
+          />
+        </a>
+
+        <!-- Desktop Nav Links -->
+        <nav class="hidden md:flex items-center gap-7 text-sm font-semibold text-slate-700">
+          <a href="#services" class="hover:text-[#C81E2B] transition">Services</a>
+          <a href="#work" class="hover:text-[#C81E2B] transition">Before &amp; After</a>
+          <a href="#location" class="hover:text-[#C81E2B] transition">Workshop &amp; Hours</a>
+        </nav>
+
+        <!-- Desktop CTA -->
+        <div class="hidden md:flex items-center gap-3">
+          <a
+            href="tel:+27152926518"
+            class="inline-flex items-center gap-1.5 text-sm font-bold text-[#1E3A70] hover:text-[#C81E2B] transition"
+          >
+            <i data-lucide="phone" class="w-4 h-4"></i>
+            015 292 6518
+          </a>
+          <a
+            href="#quote"
+            class="inline-flex items-center gap-2 bg-[#C81E2B] hover:bg-[#a61722] text-white text-sm font-bold px-4 py-2.5 rounded-lg shadow-sm transition"
+          >
+            Free Quote
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button
+          id="mobile-menu-btn"
+          type="button"
+          aria-label="Toggle menu"
+          class="md:hidden inline-flex items-center justify-center p-2 rounded-lg text-[#1E3A70] hover:bg-slate-100"
+        >
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-200 px-4 py-4 space-y-3">
+      <a href="#services" class="mobile-nav-link block font-semibold text-slate-800 py-1.5 hover:text-[#C81E2B]">Services</a>
+      <a href="#work" class="mobile-nav-link block font-semibold text-slate-800 py-1.5 hover:text-[#C81E2B]">Before &amp; After</a>
+      <a href="#location" class="mobile-nav-link block font-semibold text-slate-800 py-1.5 hover:text-[#C81E2B]">Workshop &amp; Hours</a>
+      <div class="pt-2 flex flex-col gap-2 border-t border-slate-100">
+        <a href="#quote" class="mobile-nav-link text-center bg-[#C81E2B] text-white font-bold py-2.5 rounded-lg">Request Free Quote</a>
+        <a href="tel:+27152926518" class="text-center border border-[#1E3A70] text-[#1E3A70] font-bold py-2.5 rounded-lg">Call 015 292 6518</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="top" class="relative bg-gradient-to-br from-[#0D1B35] via-[#162C57] to-[#1E3A70] text-white overflow-hidden">
+    <!-- Subtle diagonal racing accent -->
+    <div class="absolute -right-24 -top-24 w-96 h-96 rounded-full bg-[#C81E2B]/20 blur-3xl pointer-events-none"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
+      <div class="grid lg:grid-cols-12 gap-10 items-center">
+        <!-- Left Copy -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="flex flex-wrap items-center gap-2.5">
+            <span class="inline-flex items-center gap-1.5 bg-[#C81E2B] text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-full shadow">
+              <i data-lucide="shield-check" class="w-4 h-4"></i>
+              SAMBRA Approved
+            </span>
+          </div>
+
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight">
+            Panel beating, paintwork &amp; vehicle repairs in <span class="text-[#ff6b76]">Polokwane</span>
+          </h1>
+
+          <p class="text-slate-200 text-base sm:text-lg leading-relaxed max-w-2xl">
+            From dents and accident damage to paintwork and fleet repairs, our team helps get your vehicle looking right and back on the road.
+          </p>
+
+          <!-- Primary CTAs -->
+          <div class="flex flex-wrap gap-3 pt-1">
+            <a
+              href="#quote"
+              class="inline-flex items-center justify-center gap-2 bg-[#C81E2B] hover:bg-[#e11d2e] text-white font-bold px-6 py-3.5 rounded-xl shadow-lg shadow-red-900/30 transition"
+            >
+              <i data-lucide="camera" class="w-5 h-5"></i>
+              Get a Free Quote
+            </a>
+            <button
+              id="hero-whatsapp-btn"
+              type="button"
+              class="inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#1ebe5d] text-white font-bold px-6 py-3.5 rounded-xl shadow-lg transition cursor-pointer"
+            >
+              <i data-lucide="message-circle" class="w-5 h-5"></i>
+              WhatsApp Quote
+            </button>
+          </div>
+
+          <!-- Quick Trust Metrics -->
+          <div class="grid grid-cols-3 gap-4 pt-4 border-t border-white/15 max-w-lg">
+            <div>
+              <p class="text-xl sm:text-2xl font-extrabold text-white">Panel</p>
+              <p class="text-xs text-slate-300">Repairs &amp; restoration</p>
+            </div>
+            <div>
+              <p class="text-xl sm:text-2xl font-extrabold text-white">SAMBRA</p>
+              <p class="text-xs text-slate-300">Approved Repairer</p>
+            </div>
+            <div>
+              <p class="text-xl sm:text-2xl font-extrabold text-white">Auto &amp; Fleet</p>
+              <p class="text-xs text-slate-300">All Makes &amp; Models</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Visual Showcase (Workshop photo) -->
+        <div class="lg:col-span-5">
+          <div class="relative rounded-2xl overflow-hidden border border-white/20 shadow-2xl bg-[#0B1528] ring-1 ring-white/10">
+            <img
+              src="images/company-background.png"
+              alt="LimDent Auto Body Technologies Polokwane Workshop & Services"
+              class="w-full h-[300px] sm:h-[380px] object-cover object-center"
+            />
+            <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-[#0D1B35]/90 to-transparent px-5 py-4">
+              <p class="text-xs font-semibold uppercase tracking-[.18em] text-white/70">Our workshop</p>
+              <p class="text-lg font-bold text-white">Local expertise. Quality repairs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section id="services" class="py-16 sm:py-20 bg-[#F4F6FA]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <p class="text-xs font-extrabold uppercase tracking-widest text-[#C81E2B]">What We Do</p>
+        <h2 class="mt-2 text-2xl sm:text-3xl font-extrabold text-[#1E3A70]">
+          Full-Service Auto Body &amp; Commercial Repairs
+        </h2>
+        <p class="mt-3 text-slate-600 text-sm sm:text-base">
+          From minor bakkie dents and scratches to major collision restoration and commercial fleet work—click any service below to pre-fill your quote request.
+        </p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Service 1 -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md hover:border-[#1E3A70]/40 transition flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-[#1E3A70]/10 text-[#1E3A70] flex items-center justify-center mb-4">
+              <i data-lucide="wrench" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-lg font-bold text-[#1E3A70]">Panel Beating</h3>
+            <p class="mt-2 text-sm text-slate-600 leading-relaxed">
+              Precision structural straightening, dent removal, bumper repairs, and panel replacement for cars, SUVs, and bakkies.
+            </p>
+          </div>
+          <button
+            type="button"
+            data-select-service="Panel Beating"
+            class="service-select-btn mt-5 inline-flex items-center gap-1.5 text-sm font-bold text-[#C81E2B] hover:text-[#1E3A70] transition cursor-pointer"
+          >
+            Select for Quote <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </button>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md hover:border-[#1E3A70]/40 transition flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-[#C81E2B]/10 text-[#C81E2B] flex items-center justify-center mb-4">
+              <i data-lucide="paintbrush" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-lg font-bold text-[#1E3A70]">Spray Painting &amp; Colour Matching</h3>
+            <p class="mt-2 text-sm text-slate-600 leading-relaxed">
+              Dedicated spray-booth painting with accurate colour matching, clear-coat finishing, and scratch restoration.
+            </p>
+          </div>
+          <button
+            type="button"
+            data-select-service="Spray Painting"
+            class="service-select-btn mt-5 inline-flex items-center gap-1.5 text-sm font-bold text-[#C81E2B] hover:text-[#1E3A70] transition cursor-pointer"
+          >
+            Select for Quote <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </button>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md hover:border-[#1E3A70]/40 transition flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-[#1E3A70]/10 text-[#1E3A70] flex items-center justify-center mb-4">
+              <i data-lucide="car" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-lg font-bold text-[#1E3A70]">Auto Body &amp; Accident Repairs</h3>
+            <p class="mt-2 text-sm text-slate-600 leading-relaxed">
+              Complete collision repair, rust treatment, and body refurbishment done fast and reliably without breaking the bank.
+            </p>
+          </div>
+          <button
+            type="button"
+            data-select-service="Auto Body Repairs"
+            class="service-select-btn mt-5 inline-flex items-center gap-1.5 text-sm font-bold text-[#C81E2B] hover:text-[#1E3A70] transition cursor-pointer"
+          >
+            Select for Quote <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </button>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md hover:border-[#1E3A70]/40 transition flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-[#C81E2B]/10 text-[#C81E2B] flex items-center justify-center mb-4">
+              <i data-lucide="truck" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-lg font-bold text-[#1E3A70]">Commercial &amp; Trailer Repairs</h3>
+            <p class="mt-2 text-sm text-slate-600 leading-relaxed">
+              Full refurbishment, rust repair, and resprays for work bakkies, commercial vehicles, and heavy-duty trailers.
+            </p>
+          </div>
+          <button
+            type="button"
+            data-select-service="Commercial Vehicle Repairs"
+            class="service-select-btn mt-5 inline-flex items-center gap-1.5 text-sm font-bold text-[#C81E2B] hover:text-[#1E3A70] transition cursor-pointer"
+          >
+            Select for Quote <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </button>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm hover:shadow-md hover:border-[#1E3A70]/40 transition flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-[#1E3A70]/10 text-[#1E3A70] flex items-center justify-center mb-4">
+              <i data-lucide="shield-check" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-lg font-bold text-[#1E3A70]">SAMBRA Approved Quality</h3>
+            <p class="mt-2 text-sm text-slate-600 leading-relaxed">
+              Accredited workmanship meeting South African Motor Body Repairers&rsquo; Association standards for peace of mind.
+            </p>
+          </div>
+          <button
+            type="button"
+            data-select-service="Insurance / SAMBRA Claim Repair"
+            class="service-select-btn mt-5 inline-flex items-center gap-1.5 text-sm font-bold text-[#C81E2B] hover:text-[#1E3A70] transition cursor-pointer"
+          >
+            Select for Quote <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </button>
+        </div>
+
+        <!-- Service 6: Fast Turnaround CTA Card -->
+        <div class="bg-gradient-to-br from-[#1E3A70] to-[#0D1B35] text-white rounded-2xl p-6 shadow-md flex flex-col justify-between">
+          <div>
+            <span class="inline-block text-xs font-bold uppercase tracking-wider bg-[#C81E2B] px-2.5 py-1 rounded-md">
+              Fast Estimates
+            </span>
+            <h3 class="mt-3 text-lg font-bold">Need a Quick Estimate?</h3>
+            <p class="mt-2 text-sm text-slate-200 leading-relaxed">
+              Send us a photo of the damage and your vehicle details—our team will get back to you quickly with a competitive quote.
+            </p>
+          </div>
+          <a
+            href="#quote"
+            class="mt-5 inline-flex items-center justify-center gap-2 bg-white text-[#1E3A70] hover:bg-slate-100 font-bold text-sm px-4 py-2.5 rounded-lg transition"
+          >
+            Start Quote Form <i data-lucide="arrow-down" class="w-4 h-4"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BEFORE & AFTER INTERACTIVE SLIDER -->
+  <section id="work" class="py-16 sm:py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-10 items-center">
+        <!-- Left Details -->
+        <div class="lg:col-span-5 space-y-5">
+          <p class="text-xs font-extrabold uppercase tracking-widest text-[#C81E2B]">Real Workshop Results</p>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-[#1E3A70]">
+            See the Transformation: Before &amp; After
+          </h2>
+          <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+            Drag the slider across this real LimDent trailer refurbishment project—from rusted, peeling bodywork to a factory-fresh gloss white finish with new lighting and safety trim.
+          </p>
+
+          <div class="flex flex-wrap gap-2 pt-1">
+            <button type="button" id="ba-btn-before" class="px-3.5 py-2 rounded-lg text-xs font-bold border border-slate-300 text-slate-700 hover:border-[#1E3A70] hover:text-[#1E3A70] transition cursor-pointer">
+              Show Before
+            </button>
+            <button type="button" id="ba-btn-mid" class="px-3.5 py-2 rounded-lg text-xs font-bold bg-[#1E3A70] text-white transition cursor-pointer">
+              50 / 50 Split
+            </button>
+            <button type="button" id="ba-btn-after" class="px-3.5 py-2 rounded-lg text-xs font-bold border border-slate-300 text-slate-700 hover:border-[#C81E2B] hover:text-[#C81E2B] transition cursor-pointer">
+              Show After
+            </button>
+          </div>
+
+          <ul class="space-y-2.5 text-sm text-slate-700 pt-2">
+            <li class="flex items-center gap-2.5">
+              <i data-lucide="check-circle-2" class="w-5 h-5 text-[#C81E2B] shrink-0"></i>
+              Rust &amp; old paint stripped, treated, and primed
+            </li>
+            <li class="flex items-center gap-2.5">
+              <i data-lucide="check-circle-2" class="w-5 h-5 text-[#C81E2B] shrink-0"></i>
+              Smooth panel restoration &amp; high-gloss respray
+            </li>
+            <li class="flex items-center gap-2.5">
+              <i data-lucide="check-circle-2" class="w-5 h-5 text-[#C81E2B] shrink-0"></i>
+              Clean masking, lamp fitment &amp; reflective safety strip
+            </li>
+          </ul>
+        </div>
+
+        <!-- Right Interactive Slider -->
+        <div class="lg:col-span-7">
+          <div class="ba-container rounded-2xl shadow-xl border border-slate-200 aspect-[4/3] bg-slate-900">
+            <!-- Base Image: AFTER (1.jpg) -->
+            <img
+              src="images/after.jpg"
+              alt="After LimDent restoration - freshly painted glossy white trailer"
+              class="w-full h-full object-cover"
+            />
+            <!-- Overlay Image: BEFORE (2.jpg) clipped by slider -->
+            <div id="ba-before-layer" class="ba-after-wrapper" style="clip-path: inset(0 50% 0 0);">
+              <img
+                src="images/before.jpg"
+                alt="Before LimDent restoration - weathered and rusted trailer body"
+                class="w-full h-full object-cover"
+              />
+            </div>
+
+            <!-- Labels -->
+            <span class="absolute top-3 left-3 z-10 bg-[#0D1B35]/85 text-white text-xs font-bold px-3 py-1 rounded-full">
+              BEFORE
+            </span>
+            <span class="absolute top-3 right-3 z-10 bg-[#C81E2B]/90 text-white text-xs font-bold px-3 py-1 rounded-full">
+              AFTER
+            </span>
+
+            <!-- Divider & Handle -->
+            <div id="ba-divider" class="ba-divider" style="left: 50%;"></div>
+            <div id="ba-handle" class="ba-handle" style="left: 50%;">
+              <i data-lucide="chevrons-left-right" class="w-5 h-5"></i>
+            </div>
+
+            <!-- Accessible Range Input -->
+            <input
+              id="ba-slider"
+              type="range"
+              min="0"
+              max="100"
+              value="50"
+              aria-label="Compare before and after restoration"
+              class="ba-range"
+            />
+          </div>
+          <p class="mt-2.5 text-center text-xs text-slate-500">
+            Slide left or right to compare the original rusted condition with the finished LimDent spray job.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VERIFIED GOOGLE REVIEWS -->
+  <section id="reviews" class="py-16 sm:py-20 bg-[#0D1B35] text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
+        <div>
+          <p class="text-xs font-extrabold uppercase tracking-widest text-[#ff6b76]">Verified Customer Feedback</p>
+          <h2 class="mt-2 text-2xl sm:text-3xl font-extrabold text-white">
+            Rated 4.5 Stars Across 75 Google Reviews
+          </h2>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="flex flex-wrap gap-2">
+          <button type="button" data-review-filter="all" class="review-filter-btn px-4 py-2 rounded-lg text-xs font-bold bg-[#C81E2B] text-white transition cursor-pointer">
+            All Reviews (4)
+          </button>
+          <button type="button" data-review-filter="5star" class="review-filter-btn px-4 py-2 rounded-lg text-xs font-bold bg-white/10 hover:bg-white/20 text-slate-200 transition cursor-pointer">
+            5-Star Highlights
+          </button>
+          <button type="button" data-review-filter="guide" class="review-filter-btn px-4 py-2 rounded-lg text-xs font-bold bg-white/10 hover:bg-white/20 text-slate-200 transition cursor-pointer">
+            Local Guides
+          </button>
+        </div>
+      </div>
+
+      <!-- Reviews Grid (rendered dynamically by JS from verified screenshot data) -->
+      <div id="reviews-grid" class="grid md:grid-cols-2 gap-6"></div>
+    </div>
+  </section>
+
+  <!-- WORKSHOP PREMISES, LOCATION & OPERATING HOURS -->
+  <section id="location" class="py-16 sm:py-20 bg-[#F4F6FA]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <p class="text-xs font-extrabold uppercase tracking-widest text-[#C81E2B]">Visit Our Workshop</p>
+        <h2 class="mt-2 text-2xl sm:text-3xl font-extrabold text-[#1E3A70]">
+          Polokwane Workshop &amp; Operating Hours
+        </h2>
+      </div>
+
+      <div class="grid lg:grid-cols-12 gap-8 items-stretch">
+        <!-- Left: Premises Photo Card (company background.jpg) -->
+        <div class="lg:col-span-7 bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm flex flex-col">
+          <div class="relative flex-1 min-h-[240px] bg-slate-900">
+            <img
+              src="images/workshop.jpg"
+              alt="LimDent Panelbeaters Workshop Premises in Polokwane"
+              class="w-full h-full object-cover"
+            />
+            <div class="absolute bottom-3 left-3 bg-[#0D1B35]/85 backdrop-blur text-white text-xs font-semibold px-3 py-1.5 rounded-lg">
+              Futura Industrial Area, Polokwane
+            </div>
+          </div>
+          <div class="p-5 sm:p-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            <div>
+              <p class="text-xs font-bold uppercase tracking-wider text-slate-500">Workshop Address</p>
+              <p class="text-base font-bold text-[#1E3A70] mt-0.5">45 Emerald St, Futura, Polokwane, 0699</p>
+              <p class="text-xs text-slate-500 mt-1">Wheelchair accessible entrance &amp; parking &bull; Card &amp; NFC payments accepted</p>
+            </div>
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=Lim+Dent+Panelbeaters+45+Emerald+St+Futura+Polokwane"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="shrink-0 inline-flex items-center justify-center gap-2 bg-[#1E3A70] hover:bg-[#13264D] text-white text-sm font-bold px-4 py-2.5 rounded-xl transition"
+            >
+              <i data-lucide="map-pin" class="w-4 h-4"></i>
+              Get Directions
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Hours & Direct Contact -->
+        <div class="lg:col-span-5 bg-white rounded-2xl p-6 sm:p-7 border border-slate-200 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between gap-2 pb-4 border-b border-slate-100">
+              <h3 class="text-lg font-extrabold text-[#1E3A70]">Operating Hours</h3>
+              <span id="open-status-badge" class="text-xs font-bold px-2.5 py-1 rounded-full bg-slate-100 text-slate-700">
+                Checking hours...
+              </span>
+            </div>
+
+            <dl class="mt-4 space-y-2.5 text-sm">
+              <div class="flex justify-between py-1 border-b border-slate-100">
+                <dt class="font-semibold text-slate-700">Monday &ndash; Thursday</dt>
+                <dd class="font-bold text-[#1E3A70]">7:30 am &ndash; 4:45 pm</dd>
+              </div>
+              <div class="flex justify-between py-1 border-b border-slate-100">
+                <dt class="font-semibold text-slate-700">Friday</dt>
+                <dd class="font-bold text-[#1E3A70]">7:30 am &ndash; 4:15 pm</dd>
+              </div>
+              <div class="flex justify-between py-1 border-b border-slate-100">
+                <dt class="font-semibold text-slate-700">Saturday</dt>
+                <dd class="font-semibold text-[#C81E2B]">Closed</dd>
+              </div>
+              <div class="flex justify-between py-1">
+                <dt class="font-semibold text-slate-700">Sunday</dt>
+                <dd class="font-semibold text-[#C81E2B]">Closed</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="mt-6 pt-5 border-t border-slate-200 space-y-3">
+            <a href="tel:+27152926518" class="flex items-center gap-3 text-sm font-bold text-slate-800 hover:text-[#C81E2B] transition">
+              <span class="w-9 h-9 rounded-lg bg-[#1E3A70]/10 text-[#1E3A70] flex items-center justify-center shrink-0">
+                <i data-lucide="phone" class="w-4 h-4"></i>
+              </span>
+              015 292 6518
+            </a>
+            <a href="mailto:limdent@gmail.com" class="flex items-center gap-3 text-sm font-bold text-slate-800 hover:text-[#C81E2B] transition">
+              <span class="w-9 h-9 rounded-lg bg-[#C81E2B]/10 text-[#C81E2B] flex items-center justify-center shrink-0">
+                <i data-lucide="mail" class="w-4 h-4"></i>
+              </span>
+              limdent@gmail.com
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INSTANT QUOTE FORM -->
+  <section id="quote" class="py-16 sm:py-20 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <p class="text-xs font-extrabold uppercase tracking-widest text-[#C81E2B]">Fast Free Estimates</p>
+        <h2 class="mt-2 text-2xl sm:text-3xl font-extrabold text-[#1E3A70]">
+          Request Your Panel Beating or Paint Quote
+        </h2>
+        <p class="mt-2.5 text-slate-600 text-sm sm:text-base">
+          Fill in your vehicle details below—we&rsquo;ll prepare your quote request for instant WhatsApp or email delivery to our team.
+        </p>
+      </div>
+
+      <form id="quote-form" class="bg-[#F4F6FA] rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-5">
+        <div class="grid sm:grid-cols-2 gap-5">
+          <div>
+            <label for="q-name" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">Your Name *</label>
+            <input id="q-name" type="text" required placeholder="e.g. Thabo Mokoena" class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#1E3A70]" />
+          </div>
+          <div>
+            <label for="q-phone" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">Phone / WhatsApp *</label>
+            <input id="q-phone" type="tel" required placeholder="e.g. 082 123 4567" class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#1E3A70]" />
+          </div>
+        </div>
+
+        <div class="grid sm:grid-cols-2 gap-5">
+          <div>
+            <label for="q-vehicle" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">Vehicle Make, Model &amp; Year *</label>
+            <input id="q-vehicle" type="text" required placeholder="e.g. 2021 Toyota Hilux / VW Polo" class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#1E3A70]" />
+          </div>
+          <div>
+            <label for="q-service" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">Service Required *</label>
+            <select id="q-service" required class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#1E3A70]">
+              <option value="Panel Beating">Panel Beating</option>
+              <option value="Spray Painting">Spray Painting &amp; Colour Matching</option>
+              <option value="Auto Body Repairs">Auto Body &amp; Accident Repairs</option>
+              <option value="Commercial Vehicle Repairs">Commercial Vehicle / Trailer Repairs</option>
+              <option value="Insurance / SAMBRA Claim Repair">Insurance / SAMBRA Claim Repair</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="grid sm:grid-cols-2 gap-5">
+          <div>
+            <span class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">Repair Type</span>
+            <div class="grid grid-cols-2 gap-2.5">
+              <label class="flex items-center gap-2 bg-white border border-slate-300 rounded-xl px-3.5 py-2.5 text-sm font-medium cursor-pointer">
+                <input type="radio" name="claimType" value="Private / Cash" checked class="accent-[#C81E2B]" />
+                Private / Cash
+              </label>
+              <label class="flex items-center gap-2 bg-white border border-slate-300 rounded-xl px-3.5 py-2.5 text-sm font-medium cursor-pointer">
+                <input type="radio" name="claimType" value="Insurance Claim" class="accent-[#C81E2B]" />
+                Insurance Claim
+              </label>
+            </div>
+          </div>
+
+          <div>
+            <label for="q-photo" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">Attach Damage Photo (Optional)</label>
+            <input id="q-photo" type="file" accept="image/*" class="w-full text-xs text-slate-600 file:mr-3 file:py-2.5 file:px-3.5 file:rounded-lg file:border-0 file:text-xs file:font-bold file:bg-[#1E3A70] file:text-white hover:file:bg-[#13264D] cursor-pointer bg-white rounded-xl border border-slate-300 p-1" />
+          </div>
+        </div>
+
+        <!-- Optional Uploaded Photo Preview -->
+        <div id="photo-preview-wrap" class="hidden items-center gap-4 bg-white p-3 rounded-xl border border-slate-200">
+          <img id="photo-preview-img" src="" alt="Damage preview" class="w-20 h-20 rounded-lg object-cover border border-slate-200" />
+          <div class="flex-1">
+            <p id="photo-preview-name" class="text-sm font-bold text-[#1E3A70]"></p>
+            <p class="text-xs text-slate-500">Photo ready to attach when sending your quote.</p>
+          </div>
+          <button id="clear-photo-btn" type="button" class="text-xs font-bold text-[#C81E2B] hover:underline cursor-pointer">Remove</button>
+        </div>
+
+        <div>
+          <label for="q-notes" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">Describe the Damage</label>
+          <textarea id="q-notes" rows="3" placeholder="e.g. Scratched rear bumper and dented left passenger door..." class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#1E3A70]"></textarea>
+        </div>
+
+        <button
+          type="submit"
+          class="w-full inline-flex items-center justify-center gap-2 bg-[#C81E2B] hover:bg-[#a61722] text-white font-bold text-base py-3.5 px-6 rounded-xl shadow-md transition cursor-pointer"
+        >
+          <i data-lucide="send" class="w-5 h-5"></i>
+          Prepare My Free Quote Request
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#0D1B35] text-slate-300 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="flex items-center gap-4">
+        <div class="bg-white rounded-lg px-3 py-1.5">
+          <img
+            src="images/logo.png"
+            alt="LimDent Logo"
+            class="h-8 w-auto object-contain"
+          />
+        </div>
+        <div class="text-xs">
+          <p class="font-bold text-white">LimDent Auto Body Technologies</p>
+          <p>45 Emerald St, Futura, Polokwane, 0699</p>
+        </div>
+      </div>
+
+      <div class="flex flex-wrap items-center gap-5 text-xs font-semibold">
+        <a href="#services" class="hover:text-white transition">Services</a>
+        <a href="#work" class="hover:text-white transition">Before &amp; After</a>
+        <a href="#reviews" class="hover:text-white transition">Reviews</a>
+        <a href="tel:+27152926518" class="hover:text-white transition">015 292 6518</a>
+        <a href="mailto:limdent@gmail.com" class="hover:text-white transition">limdent@gmail.com</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP BUTTON & QUICK POPOVER -->
+  <div class="fixed bottom-5 right-5 z-50 flex flex-col items-end gap-3">
+    <div id="wa-popover" class="hidden w-72 bg-white rounded-2xl shadow-2xl border border-slate-200 overflow-hidden">
+      <div class="bg-[#075E54] text-white px-4 py-3 flex items-center justify-between">
+        <div>
+          <p class="text-sm font-bold">LimDent Quick Chat</p>
+          <p class="text-[11px] text-emerald-100">Panel Beating &amp; Spray Quotes</p>
+        </div>
+        <button id="wa-close-btn" type="button" aria-label="Close WhatsApp popup" class="text-white/80 hover:text-white cursor-pointer">
+          <i data-lucide="x" class="w-4 h-4"></i>
+        </button>
+      </div>
+      <div class="p-4 space-y-3 text-xs text-slate-700">
+        <p class="bg-[#F4F6FA] p-3 rounded-xl leading-relaxed">
+          Hi there! Need a quick estimate for dents, spray painting, or accident repairs in Polokwane? Send us a message or call <strong>015 292 6518</strong>.
+        </p>
+        <a
+          id="wa-direct-link"
+          href="https://wa.me/27152926518?text=Hi%20LimDent%20Auto%20Body%20Technologies%2C%20I%20would%20like%20to%20request%20a%20quote%20for%20my%20vehicle."
+          target="_blank"
+          rel="noopener noreferrer"
+          class="w-full inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#1ebe5d] text-white font-bold py-2.5 px-4 rounded-xl transition"
+        >
+          <i data-lucide="message-circle" class="w-4 h-4"></i>
+          Open WhatsApp Chat
+        </a>
+        <a
+          href="#quote"
+          id="wa-scroll-quote"
+          class="w-full inline-flex items-center justify-center gap-1.5 border border-slate-300 hover:border-[#1E3A70] text-[#1E3A70] font-bold py-2 px-4 rounded-xl transition"
+        >
+          Use Online Quote Form
+        </a>
+      </div>
+    </div>
+
+    <button
+      id="wa-fab-btn"
+      type="button"
+      aria-label="Open WhatsApp chat"
+      class="wa-fab w-14 h-14 rounded-full bg-[#25D366] hover:bg-[#1ebe5d] text-white shadow-xl flex items-center justify-center transition cursor-pointer"
+    >
+      <i data-lucide="message-circle" class="w-7 h-7"></i>
+    </button>
+  </div>
+
+  <!-- QUOTE CONFIRMATION MODAL -->
+  <div id="quote-modal" class="hidden fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-md w-full p-6 shadow-2xl border border-slate-200 space-y-4">
+      <div class="flex items-start justify-between gap-3">
+        <div class="flex items-center gap-2.5">
+          <span class="w-10 h-10 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0">
+            <i data-lucide="check" class="w-5 h-5"></i>
+          </span>
+          <div>
+            <h3 class="text-lg font-extrabold text-[#1E3A70]">Quote Request Ready!</h3>
+            <p class="text-xs text-slate-500">Choose how you&rsquo;d like to send it to LimDent:</p>
+          </div>
+        </div>
+        <button id="modal-close-btn" type="button" aria-label="Close modal" class="text-slate-400 hover:text-slate-700 cursor-pointer">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <div id="modal-summary" class="bg-[#F4F6FA] rounded-xl p-4 text-xs text-slate-700 space-y-1.5 border border-slate-200"></div>
+
+      <div class="flex flex-col gap-2.5 pt-1">
+        <a
+          id="modal-wa-send"
+          href="https://wa.me/27152926518"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="w-full inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#1ebe5d] text-white font-bold py-3 px-4 rounded-xl transition"
+        >
+          <i data-lucide="message-circle" class="w-5 h-5"></i>
+          Send via WhatsApp Now
+        </a>
+        <a
+          id="modal-email-send"
+          href="mailto:limdent@gmail.com"
+          class="w-full inline-flex items-center justify-center gap-2 bg-[#1E3A70] hover:bg-[#13264D] text-white font-bold py-3 px-4 rounded-xl transition"
+        >
+          <i data-lucide="mail" class="w-5 h-5"></i>
+          Send via Email (limdent@gmail.com)
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      // 1. Initialize Lucide icons if loaded
+      if (window.lucide && typeof window.lucide.createIcons === 'function') {
+        window.lucide.createIcons();
+      }
+
+      // 2. Branded Preloader Controller
+      const loader = document.getElementById('page-loader');
+      const loaderBar = document.getElementById('loader-bar-fill');
+      let loaderTimer = null;
+
+      function runLoader() {
+        if (!loader || !loaderBar) return;
+        clearTimeout(loaderTimer);
+        loader.classList.remove('loader-hidden');
+        loaderBar.style.transition = 'none';
+        loaderBar.style.width = '0%';
+        void loaderBar.offsetWidth;
+        loaderBar.style.transition = 'width 0.9s cubic-bezier(0.22, 1, 0.36, 1)';
+        loaderBar.style.width = '100%';
+        loaderTimer = setTimeout(function () {
+          loader.classList.add('loader-hidden');
+        }, 1050);
+      }
+
+      window.addEventListener('load', runLoader);
+      // Fallback in case load already fired
+      if (document.readyState === 'complete') {
+        runLoader();
+      }
+      const replayBtn = document.getElementById('replay-loader-btn');
+      if (replayBtn) {
+        replayBtn.addEventListener('click', runLoader);
+      }
+
+      // 3. Mobile Menu Toggle
+      const mobileBtn = document.getElementById('mobile-menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      if (mobileBtn && mobileMenu) {
+        mobileBtn.addEventListener('click', function () {
+          mobileMenu.classList.toggle('hidden');
+        });
+        document.querySelectorAll('.mobile-nav-link').forEach(function (link) {
+          link.addEventListener('click', function () {
+            mobileMenu.classList.add('hidden');
+          });
+        });
+      }
+
+      // 4. Interactive Service Selection -> Pre-fill Quote Form
+      const serviceSelect = document.getElementById('q-service');
+      const quoteSection = document.getElementById('quote');
+      document.querySelectorAll('.service-select-btn').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          const val = btn.getAttribute('data-select-service');
+          if (serviceSelect && val) {
+            serviceSelect.value = val;
+          }
+          if (quoteSection) {
+            quoteSection.scrollIntoView({ behavior: 'smooth' });
+          }
+        });
+      });
+
+      // 5. Before / After Interactive Slider
+      const baSlider = document.getElementById('ba-slider');
+      const baBeforeLayer = document.getElementById('ba-before-layer');
+      const baDivider = document.getElementById('ba-divider');
+      const baHandle = document.getElementById('ba-handle');
+      const baBtnBefore = document.getElementById('ba-btn-before');
+      const baBtnMid = document.getElementById('ba-btn-mid');
+      const baBtnAfter = document.getElementById('ba-btn-after');
+
+      function updateSlider(val) {
+        const pct = Math.max(0, Math.min(100, Number(val)));
+        if (baSlider) baSlider.value = String(pct);
+        if (baBeforeLayer) baBeforeLayer.style.clipPath = 'inset(0 ' + (100 - pct) + '% 0 0)';
+        if (baDivider) baDivider.style.left = pct + '%';
+        if (baHandle) baHandle.style.left = pct + '%';
+      }
+
+      if (baSlider) {
+        baSlider.addEventListener('input', function (e) {
+          updateSlider(e.target.value);
+        });
+      }
+      if (baBtnBefore) baBtnBefore.addEventListener('click', function () { updateSlider(92); });
+      if (baBtnMid) baBtnMid.addEventListener('click', function () { updateSlider(50); });
+      if (baBtnAfter) baBtnAfter.addEventListener('click', function () { updateSlider(8); });
+
+      // 6. Verified Google Reviews Renderer + Filters
+      const verifiedReviews = [
+        {
+          name: 'Johan Zeelie',
+          meta: 'Local Guide · 87 reviews · 39 photos',
+          stars: 5,
+          isGuide: true,
+          tag: 'Great price',
+          text: 'Lim Dent Panelbeaters repaired my bakkie fast and very effective. They know how to repair small dents and scratches with ease. Very professional and done without breaking the bank. Fast and reliable service. I will recommend them any day.'
+        },
+        {
+          name: 'Jaco Kotze',
+          meta: 'Local Guide · 55 reviews · 101 photos',
+          stars: 5,
+          isGuide: true,
+          tag: 'Colour matching',
+          text: 'Exceptional service and workmanship received for the panel repairs and spray painting on my vehicle. The quality of work exceeded my expectations, with perfect colour matching and attention to detail.'
+        },
+        {
+          name: 'Poseletso Malatji',
+          meta: '3 reviews · Verified Customer',
+          stars: 5,
+          isGuide: false,
+          tag: 'Great price',
+          text: 'Exceptional customer service at an affordable price.'
+        },
+        {
+          name: 'Mathews Letsoalo',
+          meta: 'Local Guide · 98 reviews · 1 photo',
+          stars: 4.5,
+          isGuide: true,
+          tag: 'On-time delivery',
+          text: 'Big ups to the team for stepping up. Louise was very helpful in organizing the rest and kept us up to date on each and every step. The car was done on time with an immaculate paint job.'
+        }
+      ];
+
+      const reviewsGrid = document.getElementById('reviews-grid');
+      const filterBtns = document.querySelectorAll('.review-filter-btn');
+
+      function renderReviews(filter) {
+        if (!reviewsGrid) return;
+        const list = verifiedReviews.filter(function (r) {
+          if (filter === '5star') return r.stars === 5;
+          if (filter === 'guide') return r.isGuide;
+          return true;
+        });
+
+        reviewsGrid.innerHTML = list.map(function (r) {
+          const initials = r.name.split(' ').map(function (w) { return w[0]; }).join('').slice(0, 2);
+          const starText = r.stars === 5 ? '&#9733;&#9733;&#9733;&#9733;&#9733;' : '&#9733;&#9733;&#9733;&#9733;&#9734;';
+          return (
+            '<article class="bg-white/5 border border-white/10 rounded-2xl p-6 flex flex-col justify-between gap-4">' +
+              '<div class="space-y-3">' +
+                '<div class="flex items-center justify-between gap-3">' +
+                  '<div class="flex items-center gap-3">' +
+                    '<div class="w-10 h-10 rounded-full bg-[#C81E2B] text-white font-bold text-sm flex items-center justify-center shrink-0">' + initials + '</div>' +
+                    '<div>' +
+                      '<h3 class="text-sm font-bold text-white">' + r.name + '</h3>' +
+                      '<p class="text-xs text-slate-400">' + r.meta + '</p>' +
+                    '</div>' +
+                  '</div>' +
+                  '<span class="text-xs font-bold bg-white/10 text-amber-300 px-2.5 py-1 rounded-full shrink-0">' + r.tag + '</span>' +
+                '</div>' +
+                '<div class="text-amber-400 text-sm tracking-wide">' + starText + '</div>' +
+                '<p class="text-sm text-slate-200 leading-relaxed">&ldquo;' + r.text + '&rdquo;</p>' +
+              '</div>' +
+            '</article>'
+          );
+        }).join('');
+      }
+
+      filterBtns.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          const f = btn.getAttribute('data-review-filter');
+          filterBtns.forEach(function (b) {
+            b.className = 'review-filter-btn px-4 py-2 rounded-lg text-xs font-bold bg-white/10 hover:bg-white/20 text-slate-200 transition cursor-pointer';
+          });
+          btn.className = 'review-filter-btn px-4 py-2 rounded-lg text-xs font-bold bg-[#C81E2B] text-white transition cursor-pointer';
+          renderReviews(f);
+        });
+      });
+      renderReviews('all');
+
+      // 7. Live Operating Hours Badge (South Africa UTC+2)
+      const statusBadge = document.getElementById('open-status-badge');
+      if (statusBadge) {
+        const now = new Date();
+        // Convert to SAST (UTC+2)
+        const utcMs = now.getTime() + (now.getTimezoneOffset() * 60000);
+        const sast = new Date(utcMs + (2 * 3600000));
+        const day = sast.getDay(); // 0=Sun, 1=Mon...5=Fri, 6=Sat
+        const mins = sast.getHours() * 60 + sast.getMinutes();
+        const isMonThuOpen = day >= 1 && day <= 4 && mins >= 450 && mins < 1005; // 07:30 - 16:45
+        const isFriOpen = day === 5 && mins >= 450 && mins < 975; // 07:30 - 16:15
+        if (isMonThuOpen || isFriOpen) {
+          statusBadge.textContent = 'Open Now';
+          statusBadge.className = 'text-xs font-bold px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-800';
+        } else {
+          statusBadge.textContent = 'Closed Now';
+          statusBadge.className = 'text-xs font-bold px-2.5 py-1 rounded-full bg-red-100 text-[#C81E2B]';
+        }
+      }
+
+      // 8. Photo Attachment Preview in Quote Form
+      const photoInput = document.getElementById('q-photo');
+      const previewWrap = document.getElementById('photo-preview-wrap');
+      const previewImg = document.getElementById('photo-preview-img');
+      const previewName = document.getElementById('photo-preview-name');
+      const clearPhotoBtn = document.getElementById('clear-photo-btn');
+
+      if (photoInput) {
+        photoInput.addEventListener('change', function () {
+          const file = photoInput.files && photoInput.files[0];
+          if (!file) return;
+          const reader = new FileReader();
+          reader.onload = function (ev) {
+            if (previewImg) previewImg.src = ev.target.result;
+            if (previewName) previewName.textContent = file.name;
+            if (previewWrap) {
+              previewWrap.classList.remove('hidden');
+              previewWrap.classList.add('flex');
+            }
+          };
+          reader.readAsDataURL(file);
+        });
+      }
+      if (clearPhotoBtn && photoInput) {
+        clearPhotoBtn.addEventListener('click', function () {
+          photoInput.value = '';
+          if (previewWrap) {
+            previewWrap.classList.add('hidden');
+            previewWrap.classList.remove('flex');
+          }
+        });
+      }
+
+      // 9. Quote Form Submission -> Modal with WhatsApp & Email Dispatch
+      const quoteForm = document.getElementById('quote-form');
+      const quoteModal = document.getElementById('quote-modal');
+      const modalCloseBtn = document.getElementById('modal-close-btn');
+      const modalSummary = document.getElementById('modal-summary');
+      const modalWaSend = document.getElementById('modal-wa-send');
+      const modalEmailSend = document.getElementById('modal-email-send');
+
+      if (quoteForm) {
+        quoteForm.addEventListener('submit', function (e) {
+          e.preventDefault();
+          const name = document.getElementById('q-name').value.trim();
+          const phone = document.getElementById('q-phone').value.trim();
+          const vehicle = document.getElementById('q-vehicle').value.trim();
+          const service = document.getElementById('q-service').value;
+          const claimInput = document.querySelector('input[name="claimType"]:checked');
+          const claimType = claimInput ? claimInput.value : 'Private / Cash';
+          const notes = document.getElementById('q-notes').value.trim() || 'No additional notes';
+
+          if (modalSummary) {
+            modalSummary.innerHTML =
+              '<p><strong>Name:</strong> ' + name + ' (' + phone + ')</p>' +
+              '<p><strong>Vehicle:</strong> ' + vehicle + '</p>' +
+              '<p><strong>Service:</strong> ' + service + ' (' + claimType + ')</p>' +
+              '<p><strong>Details:</strong> ' + notes + '</p>';
+          }
+
+          const messageBody =
+            'Hi LimDent Auto Body Technologies, I would like a quote:\n' +
+            'Name: ' + name + '\n' +
+            'Phone: ' + phone + '\n' +
+            'Vehicle: ' + vehicle + '\n' +
+            'Service: ' + service + ' (' + claimType + ')\n' +
+            'Damage details: ' + notes;
+
+          if (modalWaSend) {
+            modalWaSend.href = 'https://wa.me/27152926518?text=' + encodeURIComponent(messageBody);
+          }
+          if (modalEmailSend) {
+            modalEmailSend.href =
+              'mailto:limdent@gmail.com?subject=' +
+              encodeURIComponent('Quote Request - ' + vehicle + ' (' + service + ')') +
+              '&body=' +
+              encodeURIComponent(messageBody);
+          }
+          if (quoteModal) {
+            quoteModal.classList.remove('hidden');
+          }
+        });
+      }
+
+      if (modalCloseBtn && quoteModal) {
+        modalCloseBtn.addEventListener('click', function () {
+          quoteModal.classList.add('hidden');
+        });
+        quoteModal.addEventListener('click', function (e) {
+          if (e.target === quoteModal) quoteModal.classList.add('hidden');
+        });
+      }
+
+      // 10. Floating WhatsApp Popover
+      const waFabBtn = document.getElementById('wa-fab-btn');
+      const waPopover = document.getElementById('wa-popover');
+      const waCloseBtn = document.getElementById('wa-close-btn');
+      const waScrollQuote = document.getElementById('wa-scroll-quote');
+      const heroWaBtn = document.getElementById('hero-whatsapp-btn');
+
+      function toggleWaPopover() {
+        if (waPopover) waPopover.classList.toggle('hidden');
+      }
+      if (waFabBtn) waFabBtn.addEventListener('click', toggleWaPopover);
+      if (heroWaBtn) heroWaBtn.addEventListener('click', function () {
+        if (waPopover) waPopover.classList.remove('hidden');
+      });
+      if (waCloseBtn && waPopover) {
+        waCloseBtn.addEventListener('click', function () { waPopover.classList.add('hidden'); });
+      }
+      if (waScrollQuote && waPopover) {
+        waScrollQuote.addEventListener('click', function () { waPopover.classList.add('hidden'); });
+      }
+    })();
+  </script>
+</body>
+</html>

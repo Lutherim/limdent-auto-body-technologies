@@ -1,0 +1,6 @@
+{
+  "name": "LimDent Auto Body Technologies",
+  "description": "SAMBRA approved panel beating, spray painting, accident repairs, and commercial vehicle refurbishment at 45 Emerald St, Futura, Polokwane.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
